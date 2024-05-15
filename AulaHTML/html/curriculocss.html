@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo_CSS</title>
+    <meta name="description" content="Currículo sobre curso">
+    <meta name="keywords" content="currículo, html, css">
+    <link rel="stylesheet" type="text/css" href="/css/curriculo.css">
+</head>
+<body>
+    <h1 id="h11">CURRÍCULO</h1>
+    <h2 id="h21">João Pedro Cazarotti Batista</h2>
+    <img src="/img/fotojp.png" alt="foto minha">
+    <h3>Informações Necessárias</h3>
+    <p><strong>Empresa:</strong> Senac. <br><strong>Cargo:</strong> Aluno. <br><strong>Período:</strong> fevereriro de 2024 à maio de 2025. <br><strong>Breve descriçãi das funções realizadas:</strong> Front-end, Back-end e Desenvolvimento de app.</p>
+    <h3>Cursos</h3>
+    <table>
+        <tr>
+            <th>Cursos</th>
+            <th>Matrícula</th>
+            <th>Horário</th>
+            <th>Finalização</th>
+        </tr>
+        <tr>
+            <td>Técnico de Informática para Internet</td>
+            <td>20/02/2024</td>
+            <td>13h30 às 17h30</td>
+            <td>22/05/2025</td>
+        </tr>
+    </table>
+    <h2>Formulário de Login</h2>
+    <form action="curriculocss.html">
+        <fieldset>
+            <legend>Informe seu e-mail e senha</legend>
+            <p>
+              <label for="email">E-mail *:</label>
+              <br>
+              <input type="email" name="email" id="email" size="20" required>
+            </p>
+            <p>
+              <label for="senha">Senha *:</label>
+              <br>
+              <input type="password" name="senha" id="senha" minlength="8" size="12" required>
+            </p>
+        </fieldset>
+        <button type="submit" name="btefetuar">Efetuar Login</button>
+        <button type="reset" name="btcancelar">Cancelar</button>
+    </form>
+</body>
+</html>

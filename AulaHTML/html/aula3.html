@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Formulário em HTML</title>
+    <meta name="description" content="Aula de formulário em HTML5">
+    <meta name="keywords" content="aula de html, css, tags, formulário">
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <form action="cadastrar.php" method="post"> <!-- method -> post(segurança) é mais seguro, mas também existe o get(url)-->
+        <p>* Preenchimento Obrigatório</p>
+      <fieldset> <!-- fieldset -> para adicionar 'borda'-->
+        <legend>Dados de Acesso</legend>
+        <p>
+            <label for="nome">Nome *: </label>        
+            <input type="text" name="nome" id="nome" placeholder="Nome" value="" size="20" required> <!--- value -> serve para adicionar um 'valor'(você teria que editar)-->
+        </p>
+        <p>
+            <label for="email">E-Mail *: </label>        
+            <input type="email" name="email" id="email" placeholder="E-Mail" value="" size="30" required> <!-- required -> só deixar o usuário enviar se o campo estiver preenchido-->
+        </p>
+        <p>
+            <label for="senha">Senha *: </label>        
+            <input type="password" name="senha" id="senha" placeholder="Insira Aqui" value="" minlength="8" size="15" required> <!-- minlenght -> mínimo de caracteres-->
+        </p>
+        <p>
+            <label for="confirmesenha">Confirme sua Senha *: </label>        
+            <input type="password" name="confirmesenha" id="confirmesenha" placeholder="Insira Aqui" value="" minlength="8" size="15" required>
+        </p>
+      </fieldset>
+        <p>
+            <label for="dtanascimento">Data de Nascimento *: </label>        
+            <input type="date" name="dtanascimento" id="dtanascimento" required>
+        </p>
+        <p>
+            <label for="foto">Foto de Perfil *: </label>        
+            <input type="file" name="foto" id="foto" required>
+        </p>
+        <p>
+            <input type="radio" name="genero" id="generoM">
+            <label for="generoM">Masculino</label>
+            
+            <input type="radio" name="genero" id="generoF">
+            <label for="generoF">Feminino</label>            
+        </p>        
+        <p>
+            Hobby
+            <br>
+            <input type="checkbox" name="hobby[]" id=" hobbyTV">
+            <label for="hobbyTV">TV</label>
+            
+            <input type="checkbox" name="hobby[]" id=" hobbylivro">
+            <label for="hobbylivro">Livro</label>            
+
+            <input type="checkbox" name="hobby[]" id=" hobbymusica">
+            <label for="hobbymusica">Música</label>            
+        </p>
+        <p>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="">Selecione uma Opção</option>
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="AP">Amapá</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="AC">Acre</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+        </p>
+        <p>
+            <label for="mensagem">Mensagem</label> <br>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" cols="30" rows="5"></textarea>
+        </p>
+        <input type="submit" value="Enviar" name="bntEnviar">
+        <button type="submit" name="btnEnviar">Enviar</button>
+        <button type="reset" name="bntLimpar">Limpar</button>  <!-- button -> é melhor para personalização(como inserir imagenss, oq n eh possível no 'input')-->
+    </form> <!-- O certo será editar no CSS, aqui é apenas uma demonstração, mas edita mesmo no CSS! -->
+</body>
+</html>

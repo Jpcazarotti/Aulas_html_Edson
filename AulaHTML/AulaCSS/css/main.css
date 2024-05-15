@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#btnMenuMobile {
+    display: block;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotipo img {
+    width: 150px;
+}
+
+#menu {
+    width: 85%;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    display: block;
+    padding: 13px 16px;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    background-color: #ffea00;
+    color: #333;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: red;
+    background-color: #ededed;
+    padding: 10px;
+    margin-top: 30px;
+    border-bottom: 5px solid #9f0404;
+    border-radius: 10px; 
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+}
+
+th {
+    background-color: #ffffce;
+}
+
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+#boxPromocao {
+    display: flex;
+    gap: 30px;
+}
+
+#smais {
+    color: white;
+    background-color: red;
+    display: inline;
+}
+
+footer {
+    background: linear-gradient(180deg, #ff6200, #ff0000);
+    padding: 5px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #cabecalho {
+        position: fixed;
+        height: 100px;
+        background-color: #fff;
+        width: 100vh;
+        top: 0;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    #btnMenuMobile {
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    #menu {
+        display: none;
+        background-color: #fff;
+        border: 1px solid #000;
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        top: 100px;
+        left: -260px;
+    }
+
+    #menu.show {
+        display: block;
+    }
+
+    #menu ul {
+        background-color: #fff;
+    }
+
+    #menu ul li {
+        display: block;
+    }
+
+    #menu ul li a {
+        color: #333333;
+    }
+
+    #boxPromocao {
+        display: block;
+    }
+}
+

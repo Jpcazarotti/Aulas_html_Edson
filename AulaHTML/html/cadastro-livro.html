@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Livro</title>
+</head>
+<body>
+    <h1>Cadastro de Livro</h1>
+    <form action="cadastro-livro.html" method="post">
+        <fieldset>
+            <legend>Detalhes do Livro</legend>
+          <p>
+            <label for="titulo">Título *:</label>
+            <br>
+            <input type="text" name="titulo" id="titulo" size="20" required>
+          </p>            
+          <p>            
+            <label for="autor">Autor *:</label>
+            <br>
+            <input type="text" name="autor" id="autor" size="20" required>
+          </p>
+          <br>
+          <p>
+            <label for="email">E-mail Editora *:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="E-mail" size="30" required>
+          </p>
+          <p>
+            <label for="genero">Gênero *:</label>
+            <br>
+            <select name="genero" id="genero">
+                <option value="">Selecione uma Opção</option>
+                <option value="Fantasia" selected>Fantasia</option>
+                <option value="Ficção">Ficção</option>
+                <option value="Ação">Ação</option>
+                <option value="Terror">Terror</option>
+            </select>
+          </p>
+          <p>
+            <label for="descricao">Descrição *:</label>
+            <br>
+            <textarea name="descricao" id="descricao" cols="45" rows="3"></textarea>
+          </p>
+          <label for="ano_pub">Ano de Publicação:</label>
+          <br>
+          <input type="text" name="ano_pub" id="ano_pub" size="10">
+        </fieldset>
+        <fieldset>
+            <legend>Formato do Livro</legend>
+                Formato:
+                <br>
+                <input type="checkbox" name="form[]" id="capad">
+                <label for="capad">Capa Dura</label>
+                <br>
+                <input type="checkbox" name="form[]" id="capab">
+                <label for="capab">Capa Brochura</label>
+                <br>
+                <input type="checkbox" name="form[]" id="ebook">
+                <label for="ebook">E-book</label>
+        </fieldset>
+        <fieldset>
+            <legend>Idioma do Livro</legend>
+            <label for="idioma">Idioma *:</label>
+            <input type="radio" name="idioma" id="ingles" required>
+            <label for="ingles">Inglês</label>
+            <input type="radio" name="idioma" id="portugues" required>
+            <label for="portugues">Português</label>
+            <input type="radio" name="idioma" id="espanhol" required>
+            <label for="espanhol">Espanhol</label>
+        </fieldset>
+        <p><em>*Campos obrigatórios</em></p>
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>

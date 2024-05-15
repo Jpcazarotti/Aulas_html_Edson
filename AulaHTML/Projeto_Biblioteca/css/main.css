@@ -1,0 +1,229 @@
+:root{
+    --primaria: #EB7A46;
+    --secundaria: #443A9F;
+    --texto: #2f2f2f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif; 
+    color: var(--texto);
+}
+
+#cabecalho{
+    height: 80px;
+    padding: 10px;
+}
+
+#logotipo img{
+    max-width: 200px;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+#menu ul li a{
+    color: var(--texto);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botoesCabecalho{
+    line-height: 60px;
+    text-align: right;
+}
+
+#banner{
+    position: relative;
+    background: url(/img/pexels-pixabay-159711.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-Interno{
+    height: 200px !important;
+}
+
+#text{
+    position: relative;
+    z-index: 2;
+}
+
+#banner h2{
+    font-weight: bold;
+}
+
+#formPesquisa{
+    background: #ffff;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: var(--texto);
+    padding: 5px;
+    height: 44px;
+    border-radius: 22px;
+}
+
+#formPesquisa form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formPesquisa form input{
+    border: none;
+}
+
+#formPesquisa form button{
+    border: none;
+    background-color: var(--secundaria);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 2px 18px;
+    margin-left: auto;
+}
+
+#formPesquisa form i{
+    margin: 0 10px;
+}
+
+.titulo{
+    border-left: 10px solid var(--secundaria);
+    margin-top: 50px;
+    height: 75px;       
+    margin-bottom: 50px; 
+}
+
+.titulo h2{
+    font-weight: bold;
+}
+
+.boxCategoria{
+    text-align: center;
+}
+
+.boxCategoria h3{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.boximg{
+    display: inline-block;
+    border: 2px solid var(--primaria);
+    border-radius: 50%;
+    padding: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.boximg img{    
+    display: block; 
+    width: 75px;
+    height: 75px;
+}
+
+.boxLivros{
+    text-align: center;
+}
+
+.boxLivros h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 26px;
+}
+
+.boxLivros img{
+    height: 250px;
+}
+
+footer{
+    border-top: 1px solid rgb(235, 235, 235);
+}
+
+#rodape{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#rodape a{
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.ende{
+    position: relative;
+    top: 15px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.ende li{
+    padding: 6px;
+}
+
+.fa-building, .fa-phone, .fa-envelope{
+    font-size: 15px;
+    color: var(--secundaria);
+    flex-direction: column;
+    margin-right: 12px;   
+}
+
+#logosredes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-instagram, .fa-facebook{
+    font-size: 30px;
+    color: var(--secundaria);
+    background-color: rgb(235, 235, 235);
+    flex-direction: row;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 40%;
+}
+
+.fa-instagram{
+    margin-right: 70px;
+}
+
+#copyright p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    height: 70px;
+    margin-bottom: 0;
+}
